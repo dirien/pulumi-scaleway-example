@@ -27,6 +27,7 @@ jobs:
           stack-name: dev
           comment-on-pr: true
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          work-dir: ./infrastructure
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
   up:
@@ -49,5 +50,6 @@ jobs:
           command: up
           stack-name: dev
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          work-dir: ./infrastructure
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
