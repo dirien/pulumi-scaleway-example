@@ -1,0 +1,9 @@
+config:
+  infrastructure:clientId:
+    secure: AAABAFjVda21xmOMaVK9L5zsVcct9DOb07xPrlMTdAhHD7o0f1QKxIB1QJtr6KVwLor1Cw==
+  infrastructure:clientSecret:
+    secure: AAABAFwWD3MIIFosx1hmp572PnS1zZrgUsZUJJ7CeWUc+NB+TYBGnvOoKMNIqzUEpzB5ladALlzKepIw6RyteWfrwgyxN8yJ
+  scaleway:access_key:
+    secure: AAABAJ9/jVk5lu52naad70vJ970GYnnBZvHW31DMcx80GjrctLdTw4kb7brApdXp4uF80w==
+  scaleway:secret_key:
+    secure: AAABAOl6yJTQ4K2q/rOkQRiqxNiwcIvSnQ5GwR2U8o62hQT01exdnY1WWxJKFoeCE+6rOf/AoQjjNVZdW+rPVkRkvNo=

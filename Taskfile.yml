@@ -1,0 +1,32 @@
+# https://taskfile.dev
+
+version: '3'
+
+vars:
+  GREETING: Hello, World!
+
+tasks:
+
+  purge:
+    dir: infrastructure
+    cmds:
+      - pulumi destroy -y
+
+  preview-infra:
+    dir: infrastructure
+    cmds:
+      - echo "Preview infrastructure"
+      - pulumi preview
+
+  deploy-infra:
+    deps:
+      - task: preview-infra
+    dir: infrastructure
+    cmds:
+      - echo "Deploying infrastructure"
+      - pulumi up -y
+      - pulumi stack output kubeconfig --show-secrets > kubeconfig.yaml
+
+  default:
+    cmds:
+      - task: deploy-infra
