@@ -12,6 +12,9 @@ jobs:
   preview:
     name: Preview
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./infrastructure
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-go@v2.1.5
@@ -29,6 +32,9 @@ jobs:
   up:
     name: Up
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./infrastructure
     needs:
       - preview
     if: success() && startsWith(github.ref, 'refs/tags/')
