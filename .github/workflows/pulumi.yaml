@@ -20,7 +20,10 @@ jobs:
       - uses: actions/setup-go@v2.1.5
         with:
           go-version: 1.17
-      - run: go mod download
+      - run: |
+          go mod download
+          curl -fsSL https://get.pulumi.com | sh
+          pulumi plugin install resource scaleway v0.1.7 --server https://dl.briggs.work/pulumi/releases/plugins
       - uses: pulumi/actions@v3
         with:
           command: preview
@@ -44,7 +47,10 @@ jobs:
       - uses: actions/setup-go@v2.1.5
         with:
           go-version: 1.17
-      - run: go mod download
+      - run: |
+          go mod download
+          curl -fsSL https://get.pulumi.com | sh
+          pulumi plugin install resource scaleway v0.1.7 --server https://dl.briggs.work/pulumi/releases/plugins
       - uses: pulumi/actions@v3
         with:
           command: up
