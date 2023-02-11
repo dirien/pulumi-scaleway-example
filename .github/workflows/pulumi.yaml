@@ -22,7 +22,7 @@ jobs:
           curl -fsSL https://get.pulumi.com | sh
           pulumi plugin install resource scaleway v0.1.7 --server https://dl.briggs.work/pulumi/releases/plugins
         working-directory: ./infrastructure
-      - uses: pulumi/actions@v3
+      - uses: pulumi/actions@v4
         with:
           command: preview
           stack-name: dev
@@ -47,7 +47,7 @@ jobs:
           curl -fsSL https://get.pulumi.com | sh
           pulumi plugin install resource scaleway v0.1.7 --server https://dl.briggs.work/pulumi/releases/plugins
         working-directory: ./infrastructure
-      - uses: pulumi/actions@v3
+      - uses: pulumi/actions@v4
         with:
           command: up
           stack-name: dev
