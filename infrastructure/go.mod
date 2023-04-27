@@ -5,7 +5,7 @@ go 1.17
 require (
 	github.com/jaxxstorm/pulumi-scaleway/sdk v0.0.0-20220111003015-0242d1f05804
 	github.com/pulumi/pulumi-kubernetes/sdk/v3 v3.25.0
-	github.com/pulumi/pulumi/sdk/v3 v3.64.0
+	github.com/pulumi/pulumi/sdk/v3 v3.65.1
 )
 
 require (
