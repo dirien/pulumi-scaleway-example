@@ -5,7 +5,7 @@ go 1.17
 require (
 	github.com/jaxxstorm/pulumi-scaleway/sdk v0.0.0-20220111003015-0242d1f05804
 	github.com/pulumi/pulumi-kubernetes/sdk/v3 v3.30.2
-	github.com/pulumi/pulumi/sdk/v3 v3.100.0
+	github.com/pulumi/pulumi/sdk/v3 v3.102.0
 )
 
 require (
@@ -22,7 +22,7 @@ require (
 	github.com/charmbracelet/bubbletea v0.24.2 // indirect
 	github.com/charmbracelet/lipgloss v0.7.1 // indirect
 	github.com/cheggaaa/pb v1.0.29 // indirect
-	github.com/cloudflare/circl v1.3.3 // indirect
+	github.com/cloudflare/circl v1.3.7 // indirect
 	github.com/containerd/console v1.0.4-0.20230313162750-1ae8d489ac81 // indirect
 	github.com/cyphar/filepath-securejoin v0.2.4 // indirect
 	github.com/djherbis/times v1.5.0 // indirect
